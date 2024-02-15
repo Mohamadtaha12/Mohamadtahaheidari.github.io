@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamad Taha Heydari - Personal Website</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom CSS -->
+  <style>
+   @font-face {
+      font-family: 'IRANSansWeb';
+      src: url('path/to/IRANSansWeb(FaNum).ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+
+
+
+/* در فایل CSS یا درون تگ <style> در هدر HTML قرار دهید */
+img#image1 {
+  margin-top: 8mm; /* فاصله 4 سانتی‌متری از سمت راست */
+}
+
+img#image2 {
+  margin-bottom:  8mm; /* فاصله 4 سانتی‌متری از سمت چپ */
+}
+    /* CSS for video container */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+    body {
+      padding-top: 56px;
+    }
+    .center-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-with-text {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.image-with-text img {
+  margin-right: 10px; /* تنظیم فاصله بین تصویر و متن */
+  height: 30px; /* تنظیم اندازه تصاویر */
+}
+
+
+    /* Navigation Bar */
+    nav.navbar {
+      padding: 5px 10px; /* Adjust the padding as needed */
+    }
+
+    .navbar-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      height: 30px; /* Adjust the height of the logo as needed */
+    }
+
+    .navbar-brand p {
+      font-size: 18px; /* Adjust the font size as needed */
+      margin: 5px 0 0 0; /* Adjust the margin as needed */
+    }
+
+    .navbar-toggler-icon {
+      height: 15px; /* Adjust the height of the toggler icon as needed */
+    }
+
+    /* Other styles */
+    .circle-image {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    /* افکت نمایش اولیه با استفاده از Animate.css */
+    #loading {
+      display: none;
+    }
+
+    /* افزودن کد CSS برای تنظیم ابعاد تصویر والپیپر */
+    .center-image img {
+      max-width: 100%; /* حداکثر عرض تصویر به عرض صفحه محدود می‌شود */
+      height: auto; /* ارتفاع تصویر به طور خودکار تنظیم می‌شود تا نسبت ابعاد حفظ شود */
+    }
+
+    /* Custom height for the three photos */
+    .img-fluid {
+      height: 200px; /* Adjust the height as needed */
+    }
+
+    /* Styling for the About Me section */
+    .about-me-section {
+      margin-top: 50px; /* Adjust the top margin as needed */
+    }
+
+    .about-me-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .about-me-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .about-me-section p {
+      font-size: 18px;
+    
+    }
+
+    .navbar-light {
+      background-color: hsl(0, 4%, 15%) !important; /* رنگ نوار روشن */
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- افکت نمایش اولیه با استفاده از Animate.css -->
+  <div id="loading" class="animate__animated animate__fadeIn animate__delay-2s">
+    <h1>Loading...</h1>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- تصویر به جای نام -->
+    <a class="navbar-brand" href="#">
+      <div class="circle-image">
+        <img src="file:///d%3A/abar_kelas/my%20wesaite/HT.png" alt="Mohamad Taha Heydari" height="60">
+      </div>
+      <p class="custom-font">اکادمی برنامه نویسی محمد طاها حیدری</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about" onclick="scrollToSection('about')">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///D:/abar_kelas/my%20wesaite/Presentation1.pptx" target="_blank">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" onclick="scrollToSection('about')">About</a>
+        </li>
+        <!-- گزینه Aparat جدید -->
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.aparat.com/Mohamad_Taha_Heidari" target="_blank">Aparat</a>
+          <li class="nav-item">
+
+          </li>
+          </li>
+            <!-- لینک به صفحه article.html -->
+          <li class="nav-item">
+            <a class="nav-link" href="article.html">Article</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="l.html">learn</a>
+          </li>
+    
+          
+        </li>
+
+      </li>
+              
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about" class="container about-me-section">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="circle-image animate__animated animate__fadeIn">
+          <img src="file:///D:/aks%20viseo%20aparat/websiate.jpg" alt="Image 1" class="img-fluid rounded-circle">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2 class="custom-font">درباره من </h2>
+        <p class="custom-font">
+          .سلام من محمد طاها حیدری هستم یک برنامه‌نویس و بازی‌ساز هستم 12 سالم هست  که در زمینه توسعه‌ی بازی‌های موبایلی در مایکت تخصص دارم. مهارت‌های من شامل اسکرچ پایتون و سایت سازی  و مسلط بودن به مهارت‌های کامپیوتری و استفاده از بسترهای مختلف می‌باشد. همچنین، تجربه‌ی تدریس و تولید محتوا در زمینه برنامه‌نویسی را نیز دارم.میتونید ان را پایین تر ببینید
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wallpaper Image -->
+  <section class="container center-image">
+    <div class="container mt-100">
+    <img src="file:///C:/Users/BEROOZSTOCK/Downloads/46_Nero%20AI_Face_x4.jpg" alt="Image 2" class="img-fluid">
+  </section>
+  
+
+  <!-- Photo 1, 2, and 3 Sections -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Photo 1 -->
+      <div class="col-md-4 bottom-margin">
+        <a href="https://myket.ir/app/com.w_14775485" target="_blank">
+          <img src="https://assets.myket.ir/icons/large/com.w_14775485_269a1573-cf48-42f2-b5d8-4bf231258f75.png" alt="App 1" class="img-fluid">
+        </a>
+        <p class="custom-font">بازی های ساخته شده توسط محمد طاها حیدری</p>
+      </div>
+      <!-- Photo 2 -->
+      <div class="col-md-4 bottom-margin">
+        <a href="https://myket.ir/app/com.wGUN_16075109" target="_blank">
+          <img src="https://myket.ir/app-icon/com.wGUN_16075109_703662e0-f588-4a76-b51c-8790949ee98a.png" alt="App 2" class="img-fluid">
+          <p class="custom-font">بازی های ساخته شده توسط محمد طاها حیدری</p>
+
+
+        </a>
+        
+      </div>
+      <!-- Photo 3 -->
+      <div class="col-md-4 bottom-margin">
+        <a href="https://myket.ir/app/appinventor.ai_tahaheidari9.Fotball" target="_blank">
+          <img src="https://assets.myket.ir/icons/large/appinventor.ai_tahaheidari9.Fotball_5f6af9a8-1899-4330-a6cc-4c957cfee4fe.png" alt="App 3" class="img-fluid">
+        </a>
+        <p class="custom-font">بازی های ساخته شده توسط محمد طاها حیدری</p>
+      </div>
+    </div>
+  </div>
+<!-- Additional Section with Thanks -->
+<section class="container mt-5 text-center">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- افزودن عنوان -->
+            <!-- افزودن متن نمونه تدریس -->
+            <h2 class="custom-font">نمونه از تدریس محمد طاها حیدری</h2>
+            <p class="custom-font">در این ویدیو، محمد طاها حیدری نمونه‌ای از تدریس در حوزه برنامه‌نویسی را ارائه می‌دهد. برای پخش ویدیو، لطفاً روی لینک زیر کلیک کنید:</p>
+            <div class="video-container">
+              <video controls>
+                <source src="https://caspian14.asset.
+                aparat.com/aparat-video/9878a05e7ea1b439fd54f5ddf1d4192857177445-1080p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjNhYTIyZjVjNGYzMTQxOWQzYmVhYWUzYjlhMmRlYzU1IiwiZXhwIjoxNzA3NDQ4NzEyLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.Fv93IU4zPo8d7EIXhjjYjA2DUY2_eE_03D72YmAX7Yw" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+  <!-- افزودن فاصله -->
+  <div class="mt-16"></div>
+  <p>دانلود بازی تفنگ </p>
+  <a href="https://myket.ir/app/com.wGUN_16075109?utm_source=search-ads-gift&utm_medium=cpc"><img src="https://myket.ir/core/images/logo/get1-fa.png" /> </a>
+
+  <div class="mt-16"></div>
+      <h2 class="custom-font">راه‌های ارتباطی با محمد طاها حیدری</h2>
+
+      <!-- وسط‌چین کردن چهار تصویر و متن -->
+      <div class="center-images">
+        <!-- افزودن عکس برای شبکه اجتماعی -->
+        <div class="image-with-text">
+         
+     
+        </div>
+      <!-- وسط‌چین کردن چهار تصویر و متن -->
+      <div class="center-images">
+        <!-- افزودن عکس برای شبکه اجتماعی -->
+        <div class="image-with-text">
+          <img src="D:\abar_kelas\my wesaite\logo--color-black@256px.png" alt="Social Media" ">
+          <p><a href="https://www.aparat.com/Mohamad_Taha_Heidari" target="_blank">aparat.com/Mohamad_Taha_Heidari</a></p>
+        </div>
+
+        <!-- افزودن عکس برای ایمیل -->
+        <div class="image-with-text">
+          <img src="D:\abar_kelas\my wesaite\download.png" alt="Email" >
+          <p>mohamedtahaheydari@gmail.com</p>
+        </div>
+
+        <!-- افزودن عکس برای تلگرام -->
+        <div class="image-with-text">
+          <img src="file:///C:/Users/BEROOZSTOCK/Downloads/realistic_shiny_3d_round_button_with_telegram_icon.png" alt="Telegram" height="30">
+          <p>@MrProgrammer15</p>
+        </div>
+
+        <!-- افزودن عکس برای بله -->
+        <div class="image-with-text">
+          <img src="https://www.farsroid.com/wp-content/uploads/Bale-Logo.png" alt="Bale" >
+          <p>@barnamennevesi</p>
+        </div>
+      </div>
+      <div class="mt-5"></div>
+  <!-- افزودن فاصله -->
+  <div class="mt-100"></div>
+
+<!-- Additional Section with Thanks -->
+<section class="container mt-5 text-center">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="custom-font"> ❤ با تشکر از پدرم و اقای کامران سالاری و اقای مهدیار پاسبان </h2>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Bootstrap JS and Popper.js (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
